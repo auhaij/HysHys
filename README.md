@@ -1,4 +1,4 @@
 # HysHys
 
  ```
-wget -qO- https://img.coot.eu.org/OSS/hysteria.sh && chmod +x hysteria.sh && bash hysteria.sh
+wget -qO- https://raw.githubusercontent.com/auhaij/HysHys/main/hysteria.sh && chmod +x hysteria.sh && bash hysteria.sh
