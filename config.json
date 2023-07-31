@@ -1,0 +1,14 @@
+{
+"listen": ":20000",
+"protocol": "udp",
+"resolve_preference": "64",
+"auth": {
+"mode": "password",
+"config": {
+"password": "123321"
+}
+},
+"alpn": "h3",
+"cert": "/hy/ca.crt",
+"key": "/hy/ca.key"
+}
