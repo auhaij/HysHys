@@ -69,16 +69,16 @@ sed -i "4s/$rpip/$rrpip/g" /hy/config.json
 
 
 
-if [-n $ipv4]; then
+if [ -n "$ipv4" ]; then
     rrpip="46" && chip && v4v6="IPV4优先：$ipv4"
-elif [-n $ipv6 &&  -z "$ipv4" ]; then
+elif [ -n "$ipv6" ] && [ -z "$ipv4" ]; then
     rrpip="64" && chip && v4v6="IPV6优先：$ipv6"
-
-else 
+else
     echo "当前不存在你选择的IPV4/IPV6地址，或者输入错误"
 fi
 
-echo "确定当前已更换的IP优先级：${v4v6}"
+echo "确定当前已更换的IP优先级：${v4v6}" 
+
 
 
 process_name="hysteria"
