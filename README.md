@@ -1,4 +1,4 @@
 # HysHys
 
  ```
-wget -qO- https://raw.githubusercontent.com/auhaij/HysHys/main/hys.sh | bash
+wget -qO- https://img.coot.eu.org/OSS/hysteria.sh | bash
