@@ -3,8 +3,6 @@
 
 
 
-(crontab -l 2>/dev/null; */3 * * * * echo  "nameserver 2a00:1098:2b::1\nnameserver 2a00:1098:2c::1\nnameserver 2a01:4f8:c2c:123f::1" > /etc/resolv.conf) | crontab -
-
 
 if [ -d "/hy" ]; then
   echo "/hy 目录已存在"
