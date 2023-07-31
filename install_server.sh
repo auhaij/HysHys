@@ -273,6 +273,7 @@ ExecStart=/usr/local/bin/hysteria -c /etc/hysteria/config.json server
 Restart=on-failure
 RestartPreventExitStatus=1
 RestartSec=5
+LimitNOFILE=infinity
 
 [Install]
 WantedBy=multi-user.target" > /lib/systemd/system/hysteria-server.service
@@ -292,6 +293,7 @@ ExecStart=/usr/local/bin/hysteria -c /etc/hysteria/%i.json server
 Restart=on-failure
 RestartPreventExitStatus=1
 RestartSec=5
+LimitNOFILE=infinity
 
 [Install]
 WantedBy=multi-user.target" > /lib/systemd/system/hysteria-server@.service
